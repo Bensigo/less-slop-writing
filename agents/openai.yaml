@@ -1,0 +1,4 @@
+interface:
+  display_name: "Less Slop Writing"
+  short_description: "Detect and rewrite AI-slop writing"
+  default_prompt: "Use $less-slop-writing to audit this draft for AI slop and rewrite it in a direct, specific voice."

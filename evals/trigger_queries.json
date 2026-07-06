@@ -1,0 +1,42 @@
+[
+  {
+    "query": "audit this LinkedIn draft for AI slop and make it sound less generic",
+    "should_trigger": true
+  },
+  {
+    "query": "rewrite this proposal intro so it sounds direct, not like ChatGPT wrote it",
+    "should_trigger": true
+  },
+  {
+    "query": "score this blog post on a 0-5 slop scale and show the worst phrases",
+    "should_trigger": true
+  },
+  {
+    "query": "this landing page copy feels vague and over-polished. tighten it without inventing claims",
+    "should_trigger": true
+  },
+  {
+    "query": "remove phrases like 'unlock scalable growth' and replace them with concrete language",
+    "should_trigger": true
+  },
+  {
+    "query": "summarize this article in 5 bullets",
+    "should_trigger": false
+  },
+  {
+    "query": "fix grammar and punctuation in this paragraph without changing the wording",
+    "should_trigger": false
+  },
+  {
+    "query": "write a SQL query that groups users by signup month",
+    "should_trigger": false
+  },
+  {
+    "query": "make this email warmer and more formal for a legal client",
+    "should_trigger": false
+  },
+  {
+    "query": "convert this markdown checklist into JSON",
+    "should_trigger": false
+  }
+]

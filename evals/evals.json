@@ -1,0 +1,38 @@
+{
+  "skill_name": "less-slop-writing",
+  "evals": [
+    {
+      "id": "audit-generic-marketing-copy",
+      "prompt": "Use the less-slop-writing skill to audit this draft: \"In today's rapidly evolving digital landscape, brands need a holistic content ecosystem that unlocks scalable growth and drives meaningful engagement. Let's dive into why this matters.\"",
+      "expected_output": "A concise audit with a slop score, quoted findings, categories, and concrete fixes.",
+      "assertions": [
+        "The output includes a 0-5 slop score or Low/Medium/High verdict.",
+        "The output identifies manufactured hooks, corporate jargon, collaborative language, and explaining significance.",
+        "The output quotes at least 2 problematic phrases from the draft.",
+        "The output gives a cleaner rewrite or concrete replacement language."
+      ]
+    },
+    {
+      "id": "rewrite-without-inventing-specifics",
+      "prompt": "Use the less-slop-writing skill to rewrite this: \"One mid-size ecommerce brand saw significant improvements after implementing a more structured strategy over several months.\" Keep it credible, but don't invent numbers.",
+      "expected_output": "A direct rewrite that either keeps uncertainty explicit or marks missing specifics instead of inventing metrics.",
+      "assertions": [
+        "The output does not invent a brand name, metric, date, or percentage.",
+        "The output flags missing specifics such as brand, metric, strategy details, and timeline.",
+        "The rewritten sentence is shorter or more concrete than the original.",
+        "The output avoids generic phrases like significant improvements and more structured strategy unless marked as missing specifics."
+      ]
+    },
+    {
+      "id": "write-from-facts",
+      "prompt": "Use the less-slop-writing skill to turn these notes into a short product update: dashboard filters shipped, saves account managers about 20 minutes per weekly report, available today, no major UI changes.",
+      "expected_output": "A short product update that uses the provided facts, keeps tone proportional, and avoids hype.",
+      "assertions": [
+        "The output mentions the dashboard filters and the 20-minute weekly-report time saving.",
+        "The output does not describe the update as thrilling, game-changing, revolutionary, or transformative.",
+        "The output uses a practical tone suitable for a minor product update.",
+        "The output does not add unprovided claims about revenue, customer satisfaction, or growth."
+      ]
+    }
+  ]
+}
