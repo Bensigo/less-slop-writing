@@ -74,4 +74,11 @@ python3 scripts/slop_scan.py draft.md
 python3 scripts/slop_scan.py draft.md --format json
 ```
 
+In Claude Code, prefer the skill-directory variable so the script resolves from any project:
+
+```bash
+python3 "${CLAUDE_SKILL_DIR}/scripts/slop_scan.py" draft.md
+python3 "${CLAUDE_SKILL_DIR}/scripts/slop_scan.py" draft.md --format json
+```
+
 The scanner flags obvious lexical and formatting tells. It cannot judge truth, audience fit, or whether a claim has evidence. Always pair it with manual review.
